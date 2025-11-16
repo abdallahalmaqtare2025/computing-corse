@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدرس الأول: أوامر Git الأساسية - موقع الحوسبة التعليمي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">💻</span>
+                <span>موقع الحوسبة التعليمي</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">الصفحة الرئيسية</a></li>
+                <li><a href="lesson1.html" class="nav-link active">الدرس الأول</a></li>
+                <li><a href="index.html#contact" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>الدرس الأول: أوامر Git الأساسية</h1>
+            <p>تعلم أهم أوامر نظام التحكم في الإصدارات Git المستخدمة في إدارة المشاريع البرمجية</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction Section -->
+        <section id="intro" class="section">
+            <div class="container">
+                <h2>ما هو Git؟</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">🔄</div>
+                        <h3>نظام التحكم في الإصدارات</h3>
+                        <p>Git هو نظام تحكم في الإصدارات الموزع يساعد المطورين على تتبع التغييرات في الكود المصدري أثناء تطوير البرمجيات.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">👥</div>
+                        <h3>التعاون الجماعي</h3>
+                        <p>يتيح Git للفرق العمل معاً على نفس المشروع دون تعارض، مع إمكانية دمج التغييرات بسهولة.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">📝</div>
+                        <h3>سجل كامل للتغييرات</h3>
+                        <p>يحفظ Git سجلاً كاملاً لجميع التغييرات التي تمت على المشروع، مما يسمح بالرجوع إلى أي نسخة سابقة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Basic Commands Section -->
+        <section id="commands" class="section section-alt">
+            <div class="container">
+                <h2>أوامر Git الأساسية</h2>
+                <div class="cloud-content">
+                    <div class="model-item">
+                        <h4>git init</h4>
+                        <p><strong>الوصف:</strong> تهيئة مستودع Git جديد في المجلد الحالي.</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git init</pre>
+                    </div>
+
+                    <div class="model-item">
+                        <h4>git config</h4>
+                        <p><strong>الوصف:</strong> إعداد معلومات المستخدم (الاسم والبريد الإلكتروني).</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git config --global user.name "اسمك الكامل"
+git config --global user.email "your-email@example.com"</pre>
+                    </div>
+
+                    <div class="model-item">
+                        <h4>git add</h4>
+                        <p><strong>الوصف:</strong> إضافة الملفات إلى منطقة التجهيز (Staging Area) استعداداً للحفظ.</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git add .              # إضافة جميع الملفات
+git add filename.txt   # إضافة ملف محدد</pre>
+                    </div>
+
+                    <div class="model-item">
+                        <h4>git commit</h4>
+                        <p><strong>الوصف:</strong> حفظ التغييرات في المستودع مع رسالة توضيحية.</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git commit -m "رسالة توضيحية للتغييرات"</pre>
+                    </div>
+
+                    <div class="model-item">
+                        <h4>git status</h4>
+                        <p><strong>الوصف:</strong> عرض حالة الملفات في المستودع (المعدلة، الجديدة، المحذوفة).</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git status</pre>
+                    </div>
+
+                    <div class="model-item">
+                        <h4>git remote add</h4>
+                        <p><strong>الوصف:</strong> ربط المستودع المحلي بمستودع بعيد على GitHub.</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git remote add origin https://github.com/username/repo.git</pre>
+                    </div>
+
+                    <div class="model-item">
+                        <h4>git push</h4>
+                        <p><strong>الوصف:</strong> رفع التغييرات من المستودع المحلي إلى GitHub.</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git push origin main</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow Example Section -->
+        <section id="workflow" class="section">
+            <div class="container">
+                <h2>مثال عملي: سير العمل الكامل</h2>
+                <div class="cloud-text">
+                    <h3>خطوات رفع مشروع إلى GitHub</h3>
+                    <pre style="background: #1f2937; color: #f3f4f6; padding: 1.5rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left; line-height: 1.8;">
+# 1. تهيئة مستودع Git
+git init
+
+# 2. إعداد معلومات المستخدم
+git config --global user.name "اسمك الكامل"
+git config --global user.email "your-email@example.com"
+
+# 3. إضافة جميع الملفات
+git add .
+
+# 4. حفظ التغييرات
+git commit -m "Initial commit"
+
+# 5. ربط المستودع بـ GitHub
+git remote add origin https://github.com/username/repo-name.git
+
+# 6. رفع الملفات إلى GitHub
+git branch -M main
+git push -u origin main
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Section -->
+        <section id="summary" class="section section-alt">
+            <div class="container">
+                <h2>ملخص الدرس</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">✅</div>
+                        <h3>الأوامر المهمة</h3>
+                        <ul class="benefits-list">
+                            <li>✓ <strong>git init</strong> - تهيئة مستودع جديد</li>
+                            <li>✓ <strong>git config</strong> - إعداد معلومات المستخدم</li>
+                            <li>✓ <strong>git add</strong> - إضافة الملفات للتتبع</li>
+                            <li>✓ <strong>git commit</strong> - حفظ التغييرات</li>
+                            <li>✓ <strong>git status</strong> - عرض حالة الملفات</li>
+                            <li>✓ <strong>git remote add</strong> - ربط بـ GitHub</li>
+                            <li>✓ <strong>git push</strong> - رفع التغييرات</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3>نقاط رئيسية</h3>
+                        <ul class="benefits-list">
+                            <li>✓ Git يساعد في تتبع التغييرات</li>
+                            <li>✓ GitHub منصة لاستضافة المشاريع</li>
+                            <li>✓ الـ Commit يحفظ نسخة من المشروع</li>
+                            <li>✓ يمكن الرجوع لأي نسخة سابقة</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>عن الموقع</h4>
+                <p>موقع تعليمي متخصص في تقديم محتوى شامل عن الحوسبة والحوسبة السحابية.</p>
+            </div>
+            <div class="footer-section">
+                <h4>الأقسام</h4>
+                <ul>
+                    <li><a href="index.html#fundamentals">المفاهيم الأساسية</a></li>
+                    <li><a href="index.html#cloud">الحوسبة السحابية</a></li>
+                    <li><a href="index.html#resources">الموارد</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>تواصل معنا</h4>
+                <p>البريد الإلكتروني: <a href="mailto:abdallahalmaqtare@gmail.com">abdallahalmaqtare@gmail.com</a></p>
+                <p>المالك: Abdullah almaqtari</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 موقع الحوسبة التعليمي. جميع الحقوق محفوظة.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">© جميع الحقوق محفوظة لـ <strong>Abdullah almaqtari</strong> | البريد الإلكتروني: <a href="mailto:abdallahalmaqtare@gmail.com" style="color: #d1d5db; text-decoration: underline;">abdallahalmaqtare@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
