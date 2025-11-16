@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الدرس الثاني: التعاون الجماعي (Collaboration) - موقع الحوسبة التعليمي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">💻</span>
+                <span>موقع الحوسبة التعليمي</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link">الصفحة الرئيسية</a></li>
+                <li><a href="lesson1.html" class="nav-link">الدرس الأول</a></li>
+                <li><a href="lesson2.html" class="nav-link active">الدرس الثاني</a></li>
+                <li><a href="index.html#contact" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>الدرس الثاني: التعاون الجماعي (Collaboration)</h1>
+            <p>تعلم كيفية العمل مع فريق على نفس المشروع باستخدام Git و GitHub</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Introduction Section -->
+        <section id="intro" class="section">
+            <div class="container">
+                <h2>ما هو التعاون الجماعي في Git؟</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">👥</div>
+                        <h3>العمل الجماعي</h3>
+                        <p>التعاون الجماعي يتيح لعدة مطورين العمل على نفس المشروع في نفس الوقت دون حدوث تعارضات.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🔀</div>
+                        <h3>الفروع (Branches)</h3>
+                        <p>الفروع تسمح لكل مطور بالعمل على ميزة منفصلة دون التأثير على الكود الرئيسي.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🔄</div>
+                        <h3>المزامنة</h3>
+                        <p>مزامنة التغييرات بين أعضاء الفريق لضمان أن الجميع يعمل على أحدث نسخة من المشروع.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Branching Section -->
+        <section id="branching" class="section section-alt">
+            <div class="container">
+                <h2>العمل مع الفروع (Branches)</h2>
+                <div class="cloud-content">
+                    <div class="model-item">
+                        <h4>git branch</h4>
+                        <p><strong>الوصف:</strong> عرض قائمة الفروع أو إنشاء فرع جديد.</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git branch              # عرض جميع الفروع
+git branch feature-1    # إنشاء فرع جديد</pre>
+                    </div>
+
+                    <div class="model-item">
+                        <h4>git checkout</h4>
+                        <p><strong>الوصف:</strong> الانتقال إلى فرع آخر.</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git checkout feature-1       # الانتقال إلى فرع موجود
+git checkout -b feature-2    # إنشاء فرع والانتقال إليه</pre>
+                    </div>
+
+                    <div class="model-item">
+                        <h4>git merge</h4>
+                        <p><strong>الوصف:</strong> دمج التغييرات من فرع إلى فرع آخر.</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git checkout main       # الانتقال إلى الفرع الرئيسي
+git merge feature-1     # دمج التغييرات من feature-1</pre>
+                    </div>
+
+                    <div class="model-item">
+                        <h4>git branch -d</h4>
+                        <p><strong>الوصف:</strong> حذف فرع بعد الانتهاء منه.</p>
+                        <p><strong>الاستخدام:</strong></p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left;">git branch -d feature-1    # حذف فرع محلي</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collaboration Commands Section -->
+        <section id="collab-commands" class="section">
+            <div class="container">
+                <h2>أوامر التعاون مع GitHub</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">📥</div>
+                        <h3>git clone</h3>
+                        <p><strong>الوصف:</strong> نسخ مستودع من GitHub إلى جهازك المحلي.</p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left; margin-top: 1rem;">git clone https://github.com/user/repo.git</pre>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⬇️</div>
+                        <h3>git pull</h3>
+                        <p><strong>الوصف:</strong> تحميل أحدث التغييرات من GitHub ودمجها مع نسختك المحلية.</p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left; margin-top: 1rem;">git pull origin main</pre>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🔍</div>
+                        <h3>git fetch</h3>
+                        <p><strong>الوصف:</strong> تحميل التغييرات من GitHub دون دمجها (للمراجعة أولاً).</p>
+                        <pre style="background: #f3f4f6; padding: 1rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left; margin-top: 1rem;">git fetch origin</pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pull Requests Section -->
+        <section id="pull-requests" class="section section-alt">
+            <div class="container">
+                <h2>طلبات السحب (Pull Requests)</h2>
+                <div class="cloud-content">
+                    <div class="cloud-text">
+                        <div class="cloud-icon">🔀</div>
+                        <h3>ما هي Pull Request؟</h3>
+                        <p>Pull Request هي طريقة لإخبار الآخرين بالتغييرات التي قمت بها وطلب مراجعتها قبل دمجها في الفرع الرئيسي.</p>
+                        <ul class="benefits-list">
+                            <li>✓ مراجعة الكود قبل الدمج</li>
+                            <li>✓ مناقشة التغييرات مع الفريق</li>
+                            <li>✓ ضمان جودة الكود</li>
+                            <li>✓ توثيق التغييرات</li>
+                        </ul>
+                    </div>
+                    <div class="cloud-models">
+                        <h3>خطوات إنشاء Pull Request</h3>
+                        <div class="model-item">
+                            <h4>1. إنشاء فرع جديد</h4>
+                            <p>اعمل على ميزة جديدة في فرع منفصل</p>
+                        </div>
+                        <div class="model-item">
+                            <h4>2. رفع الفرع إلى GitHub</h4>
+                            <p>ارفع التغييرات إلى المستودع البعيد</p>
+                        </div>
+                        <div class="model-item">
+                            <h4>3. فتح Pull Request</h4>
+                            <p>من واجهة GitHub، اطلب دمج الفرع</p>
+                        </div>
+                        <div class="model-item">
+                            <h4>4. المراجعة والدمج</h4>
+                            <p>بعد الموافقة، يتم دمج التغييرات</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workflow Example Section -->
+        <section id="workflow" class="section">
+            <div class="container">
+                <h2>مثال عملي: سير عمل الفريق</h2>
+                <div class="cloud-text">
+                    <h3>سيناريو: إضافة ميزة جديدة للمشروع</h3>
+                    <pre style="background: #1f2937; color: #f3f4f6; padding: 1.5rem; border-radius: 8px; overflow-x: auto; direction: ltr; text-align: left; line-height: 1.8;">
+# 1. نسخ المشروع (للمرة الأولى فقط)
+git clone https://github.com/team/project.git
+cd project
+
+# 2. تحديث الفرع الرئيسي
+git checkout main
+git pull origin main
+
+# 3. إنشاء فرع للميزة الجديدة
+git checkout -b add-login-feature
+
+# 4. العمل على الميزة وحفظ التغييرات
+git add .
+git commit -m "Add login feature"
+
+# 5. رفع الفرع إلى GitHub
+git push origin add-login-feature
+
+# 6. إنشاء Pull Request من واجهة GitHub
+
+# 7. بعد الموافقة والدمج، حذف الفرع المحلي
+git checkout main
+git pull origin main
+git branch -d add-login-feature
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conflict Resolution Section -->
+        <section id="conflicts" class="section section-alt">
+            <div class="container">
+                <h2>حل التعارضات (Conflicts)</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">⚠️</div>
+                        <h3>ما هي التعارضات؟</h3>
+                        <p>تحدث التعارضات عندما يقوم شخصان بتعديل نفس السطر في نفس الملف. Git لا يستطيع تحديد أي تغيير يجب الاحتفاظ به.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🔧</div>
+                        <h3>كيفية حل التعارضات</h3>
+                        <ul class="benefits-list">
+                            <li>✓ افتح الملف المتعارض</li>
+                            <li>✓ ابحث عن علامات التعارض (&lt;&lt;&lt;&lt;&lt;&lt;&lt;)</li>
+                            <li>✓ اختر التغيير الصحيح أو ادمج التغييرين</li>
+                            <li>✓ احذف علامات التعارض</li>
+                            <li>✓ احفظ الملف وقم بعمل commit</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">💡</div>
+                        <h3>نصائح لتجنب التعارضات</h3>
+                        <ul class="benefits-list">
+                            <li>✓ قم بعمل pull بانتظام</li>
+                            <li>✓ اعمل على فروع منفصلة</li>
+                            <li>✓ تواصل مع فريقك</li>
+                            <li>✓ قسّم العمل بوضوح</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Practices Section -->
+        <section id="best-practices" class="section">
+            <div class="container">
+                <h2>أفضل الممارسات للتعاون</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">📝</div>
+                        <h3>رسائل Commit واضحة</h3>
+                        <p>اكتب رسائل توضيحية تشرح ماذا فعلت ولماذا. مثال: "Fix login bug" أفضل من "update".</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🔄</div>
+                        <h3>Commits صغيرة ومتكررة</h3>
+                        <p>قم بعمل commits صغيرة بشكل متكرر بدلاً من commit واحد كبير. هذا يسهل تتبع التغييرات.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🌿</div>
+                        <h3>استخدم الفروع</h3>
+                        <p>لا تعمل مباشرة على الفرع الرئيسي. أنشئ فرعاً جديداً لكل ميزة أو إصلاح.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">👁️</div>
+                        <h3>راجع الكود</h3>
+                        <p>راجع كود زملائك في Pull Requests وتقبل المراجعات على كودك بصدر رحب.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Summary Section -->
+        <section id="summary" class="section section-alt">
+            <div class="container">
+                <h2>ملخص الدرس</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">✅</div>
+                        <h3>الأوامر المهمة</h3>
+                        <ul class="benefits-list">
+                            <li>✓ <strong>git clone</strong> - نسخ مستودع</li>
+                            <li>✓ <strong>git branch</strong> - إدارة الفروع</li>
+                            <li>✓ <strong>git checkout</strong> - الانتقال بين الفروع</li>
+                            <li>✓ <strong>git merge</strong> - دمج الفروع</li>
+                            <li>✓ <strong>git pull</strong> - تحميل التحديثات</li>
+                            <li>✓ <strong>git fetch</strong> - مراجعة التحديثات</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🎯</div>
+                        <h3>نقاط رئيسية</h3>
+                        <ul class="benefits-list">
+                            <li>✓ الفروع تسمح بالعمل المتوازي</li>
+                            <li>✓ Pull Requests للمراجعة والدمج</li>
+                            <li>✓ التواصل يقلل التعارضات</li>
+                            <li>✓ المراجعة تحسن جودة الكود</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>عن الموقع</h4>
+                <p>موقع تعليمي متخصص في تقديم محتوى شامل عن الحوسبة والحوسبة السحابية.</p>
+            </div>
+            <div class="footer-section">
+                <h4>الأقسام</h4>
+                <ul>
+                    <li><a href="index.html#fundamentals">المفاهيم الأساسية</a></li>
+                    <li><a href="index.html#cloud">الحوسبة السحابية</a></li>
+                    <li><a href="index.html#resources">الموارد</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>تواصل معنا</h4>
+                <p>البريد الإلكتروني: <a href="mailto:abdallahalmaqtare@gmail.com">abdallahalmaqtare@gmail.com</a></p>
+                <p>المالك: Abdullah almaqtari</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 موقع الحوسبة التعليمي. جميع الحقوق محفوظة.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">© جميع الحقوق محفوظة لـ <strong>Abdullah almaqtari</strong> | البريد الإلكتروني: <a href="mailto:abdallahalmaqtare@gmail.com" style="color: #d1d5db; text-decoration: underline;">abdallahalmaqtare@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
