@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الحوسبة التعليمي</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-icon">💻</span>
+                <span>موقع الحوسبة التعليمي</span>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#fundamentals" class="nav-link">المفاهيم الأساسية</a></li>
+                <li><a href="#cloud" class="nav-link">الحوسبة السحابية</a></li>
+                <li><a href="#resources" class="nav-link">الموارد</a></li>
+                <li><a href="#contact" class="nav-link">اتصل بنا</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>موقع الحوسبة التعليمي</h1>
+            <p>تعلم مفاهيم الحوسبة الأساسية والحوسبة السحابية من خلال محتوى تعليمي شامل وسهل الفهم</p>
+            <button class="btn btn-primary" onclick="document.getElementById('fundamentals').scrollIntoView({behavior: 'smooth'})">ابدأ التعلم الآن</button>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Fundamentals Section -->
+        <section id="fundamentals" class="section">
+            <div class="container">
+                <h2>المفاهيم الأساسية للحوسبة</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">📚</div>
+                        <h3>ما هي الحوسبة؟</h3>
+                        <p>الحوسبة هي أي نشاط موجه نحو الهدف يتطلب أو يستفيد من أجهزة الكمبيوتر. تشمل تصميم وتطوير الأنظمة والبرمجيات.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">⚙️</div>
+                        <h3>مكونات الحاسوب</h3>
+                        <p>تتكون أجهزة الكمبيوتر من مكونات مادية (العتاد) وبرمجيات تعمل معاً لتنفيذ المهام المختلفة.</p>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">🌐</div>
+                        <h3>الشبكات والإنترنت</h3>
+                        <p>الشبكات تربط أجهزة الكمبيوتر ببعضها البعض. الإنترنت هي شبكة عالمية ضخمة تربط ملايين الأجهزة.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cloud Computing Section -->
+        <section id="cloud" class="section section-alt">
+            <div class="container">
+                <h2>الحوسبة السحابية</h2>
+                <div class="cloud-content">
+                    <div class="cloud-text">
+                        <div class="cloud-icon">☁️</div>
+                        <h3>ما هي الحوسبة السحابية؟</h3>
+                        <p>الحوسبة السحابية هي توفير خدمات الحوسبة عبر الإنترنت. بدلاً من امتلاك بنية تحتية خاصة، يمكنك استئجار الموارد من مزود خدمة سحابية.</p>
+                        <ul class="benefits-list">
+                            <li>✓ توفير التكاليف</li>
+                            <li>✓ مرونة عالية</li>
+                            <li>✓ سهولة الوصول</li>
+                            <li>✓ قابلية التوسع</li>
+                        </ul>
+                    </div>
+                    <div class="cloud-models">
+                        <h3>نماذج الخدمة السحابية</h3>
+                        <div class="model-item">
+                            <h4>SaaS - البرمجيات كخدمة</h4>
+                            <p>تطبيقات جاهزة عبر الإنترنت (مثل Gmail)</p>
+                        </div>
+                        <div class="model-item">
+                            <h4>PaaS - المنصة كخدمة</h4>
+                            <p>بيئة لتطوير واختبار ونشر التطبيقات</p>
+                        </div>
+                        <div class="model-item">
+                            <h4>IaaS - البنية التحتية كخدمة</h4>
+                            <p>موارد حوسبة أساسية (خوادم، تخزين)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resources Section -->
+        <section id="resources" class="section">
+            <div class="container">
+                <h2>الموارد الإضافية</h2>
+                <div class="cards-grid">
+                    <div class="card">
+                        <div class="card-icon">📖</div>
+                        <h3>مسرد المصطلحات</h3>
+                        <p>قاموس شامل للمصطلحات التقنية المستخدمة في الحوسبة.</p>
+                        <button class="btn btn-secondary">اقرأ المزيد</button>
+                    </div>
+                    <div class="card">
+                        <div class="card-icon">❓</div>
+                        <h3>أسئلة شائعة</h3>
+                        <p>إجابات على الأسئلة الشائعة حول الحوسبة والحوسبة السحابية.</p>
+                        <button class="btn btn-secondary">اقرأ المزيد</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section section-alt">
+            <div class="container contact-container">
+                <h2>اتصل بنا</h2>
+                <p>هل لديك أسئلة أو اقتراحات؟ نحن هنا للاستماع إليك.</p>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" placeholder="اسمك" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="بريدك الإلكتروني" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="رسالتك" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">أرسل الرسالة</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>عن الموقع</h4>
+                <p>موقع تعليمي متخصص في تقديم محتوى شامل عن الحوسبة والحوسبة السحابية.</p>
+            </div>
+            <div class="footer-section">
+                <h4>الأقسام</h4>
+                <ul>
+                    <li><a href="#fundamentals">المفاهيم الأساسية</a></li>
+                    <li><a href="#cloud">الحوسبة السحابية</a></li>
+                    <li><a href="#resources">الموارد</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>تواصل معنا</h4>
+                <p>البريد الإلكتروني: <a href="mailto:abdallahalmaqtare@gmail.com">abdallahalmaqtare@gmail.com</a></p>
+                <p>المالك: Abdullah almaqtari</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 موقع الحوسبة التعليمي. جميع الحقوق محفوظة.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.9rem;">© جميع الحقوق محفوظة لـ <strong>Abdullah almaqtari</strong> | البريد الإلكتروني: <a href="mailto:abdallahalmaqtare@gmail.com" style="color: #d1d5db; text-decoration: underline;">abdallahalmaqtare@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
